@@ -4,18 +4,17 @@ import 'package:phone_auth_assignment/controller/phone_controller.dart';
 import 'package:phone_auth_assignment/controller/profile_controller.dart';
 import 'package:phone_auth_assignment/core/utils/sizes.dart';
 import 'package:phone_auth_assignment/core/widgets/custom_button.dart';
+import 'package:phone_auth_assignment/services/auth/Authentication.dart';
 
 class ConfirmationScreen extends StatelessWidget {
   ConfirmationScreen({super.key, required this.profile});
 
   final String? profile;
   final controller = Get.put(ProfileController());
-  final phoneController = Get.put(PhoneController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Padding(
         padding: const EdgeInsets.all(AppSizes.defaultPadding),
         child: Column(
@@ -42,7 +41,7 @@ class ConfirmationScreen extends StatelessWidget {
             ),
             CustomButton(
               title: 'Logout',
-              onTap: () => phoneController.logout(),
+              onTap: () => Authentication.logout(),
             )
           ],
         ),

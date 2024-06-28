@@ -10,5 +10,6 @@ class ProfileController extends GetxController{
   void changeProfile(value) {
     selectedProfile.value = value;
     print(selectedProfile);
+
   }
 }

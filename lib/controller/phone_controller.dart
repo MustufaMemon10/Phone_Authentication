@@ -64,22 +64,4 @@ class PhoneController extends GetxController {
     }
   }
 
-  /// OTP verify Function
-
-  Future<void> logout() async {
-    try {
-      await FirebaseAuth.instance.signOut();
-      Get.offAll(() => const LanguageScreen());
-    } on FirebaseAuthException catch (e) {
-      throw (e.code.toString());
-    } on FirebaseException catch (e) {
-      throw (e.code.toString());
-    } on FormatException catch (e) {
-      throw (e.toString());
-    } on PlatformException catch (e) {
-      throw (e.code.toString());
-    } catch (e) {
-      Loaders.errorSnackBar(title: 'Oh Snap', message: e.toString());
-    }
-  }
 }
