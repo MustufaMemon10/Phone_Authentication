@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:phone_auth_assignment/controller/phone_controller.dart';
 import 'package:phone_auth_assignment/controller/profile_controller.dart';
 import 'package:phone_auth_assignment/core/utils/sizes.dart';
 import 'package:phone_auth_assignment/core/widgets/custom_button.dart';

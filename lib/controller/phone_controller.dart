@@ -1,11 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:phone_auth_assignment/controller/otp_controller.dart';
 import 'package:phone_auth_assignment/core/utils/loader/snackbar.dart';
 import 'package:phone_auth_assignment/screens/Verify_Phone.dart';
-import 'package:phone_auth_assignment/screens/language_screen.dart';
 
 class PhoneController extends GetxController {
   static PhoneController get instance => Get.find();
